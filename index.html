@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSI 2020</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/bbf1782667.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <section class="main">
+      <div class="logo">MSI 2020 <button class="fav-button-open">Favourite</button></div>
+      <div class="subtitle">
+        <h1 class="title">Hey!</h1>
+        <p class="subtitle">Let’s try to find a joke for you:</p>
+      </div>
+      <form action="" class="form">
+        <div class="input">
+          <input type="radio" name="joketype" value="random" id="random" checked>
+          <label for="random">Random</label>
+        </div>
+        <div class="input">
+          <input type="radio" name="joketype" value="categories" id="categories">
+          <label for="categories">From categories</label>
+        </div>
+        <div class="input">
+          <div class="categories"></div>
+          <input type="radio" name="joketype" value="search" id="search">
+          <label for="search">Search</label>
+
+        </div>
+        <input type="text" placeholder="Free text search..." id="searchfield">
+
+        <input type="submit" value="Get a joke" class="get-joke">
+      </form>
+      <div class="joke-field">
+        <div class="joke">
+          <div class="like"><i class="far fa-heart"></i></div>
+
+          <div class="joke-container">
+            <div class="img-container"><img class="icon-img" src="img/message.png" alt="message"></div>
+            <div class="message-container">
+              <p class="pre-id">ID:</p>
+              <a class="id"></a>
+              <img src="img/link.svg" alt="">
+
+              <div class="joke-text"></div>
+              <div class="joke-footer">
+                <div class="last-update"></div>
+                <div class="joke-category"></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="section-container">
+      <div class="fav">
+        <div class="fav-header">
+          <h2 class="fav-title">Favourite</h2><button class="fav-button-close">Favourite</button>
+        </div>
+        <div class="favourite"></div>
+      </div>
+    </section>
+  </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
